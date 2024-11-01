@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: white;
+}
+
+.bg {
+    position: absolute;
+    width: 98vw;
+    height: 290vh;
+    top: 0;
+    left: 0;
+    background: url(./images/bg\ image.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -5;
+    opacity: 0.4;
+}
+
+.section-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero {
+    border: 3px solid rgb(117, 117, 117);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+} 
+
+.nav {
+   height: 120px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.nav-logo {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 90px;
+    left: 37%;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style: none;
+}
+
+.nav-menu ul li * {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-menu li:hover {
+    background-color: rgba(255, 255, 225, 0.5);
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.zones {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.zones a {
+    flex-basis: 18%;
+    min-width: 20em;
+  }
+  .zones img {
+    height: 300px;
+    
+  }
+
+  .featured-items {
+    display: block;
+    position: relative;
+    transform: scale(.95);
+    transition: transform 250ms ease-in-out;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.featured-items:hover,
+.featured-items:focus, 
+.featured-details:hover,
+.featured-details:focus{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.featured-details {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    text-align: center;
+}
+
+.split-main {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.split {
+    width: 50%;
+}
+
+.split img {
+    height: 70%;
+    width: 70%;
+}
+
+.bestseller-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.bestseller-details {
+    text-wrap:wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.125rem;
+    padding: .2em .8em;
+    background: var(--clr-accent, rgb(255, 255, 255));
+    border-radius: .55em;
+    transition: 
+    transform 350ms ease-in-out,
+    opacity 25ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+     transform: scale(1.1);
+     opacity: .8;
+}
